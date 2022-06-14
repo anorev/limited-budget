@@ -1,0 +1,40 @@
+#app {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+  margin-top: 60px;
+}
+
+h1 {
+  color: red;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+
+#search {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  
+
+  border: red solid 1px;
+
+  height: 100%;
+  width: 100%;
+}
+
+.search__bar {
+  border-radius: 24px;
+  height: 44px;
+  width: 584px;
+  max-width: 584px;
+  border: black solid 1px;
+}
