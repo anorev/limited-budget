@@ -1,33 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Results</title>
 </head>
+
 <body>
-    <main id="results">
-        <header>
-            <h1>Search results</h1>
-            <form>
-                <input class="search__bar" type="text" placeholder="Rechercher..." name="search">
-                <!-- <button type="submit">Submit</button> -->
-                <a href="/pages/results.html">Recherche</a>
-            </form>
-            <span>Account</span>
+    <main id="results" class="w-full h-full flex flex-col justify-between items-center bg-gray-50 text-stone-900">
+        <header class="w-full h-24 flex justify-between items-center mb-5 px-5 border-b-[2px]">
+            <div class="flex justify-start items-center w-3/5">
+                <h1 class="font-bold text-xl uppercase">Search results</h1>
+                <form class="ml-5 w-3/5">
+                    <input class="pl-3 rounded-full border-2 border-black h-12 w-full" type="text"
+                        placeholder="Rechercher..." name="search">
+                    <!-- <button type="submit">Submit</button> -->
+                    <!-- <a href="/pages/results.html">Recherche</a> -->
+                </form>
+            </div>
+            <div id="account" class="relative" x-data="{open: false}">
+                <button @click="open = !open" class="flex justify-center items-center">
+                    <div class="rounded-full bg-rose-500 h-8 w-8"></div>
+                </button>
+                <aside x-show="open" x-cloak
+                    class="border-neutral-200 bg-slate-50 mt-2 pl-3 py-3 rounded-md h-64 w-64 absolute right-0 border-2 ">
+                    <h3 class="font-bold text-xl uppercase">Account</h3>
+                    <ul class="list-disc pl-5 mt-2">
+                        <li class="text-neutral-400">Clicks</li>
+                        <li class="text-neutral-400">Time</li>
+                        <li class="text-neutral-400">MouseMoves</li>
+                        <li class="text-neutral-400">KeyPresses</li>
+                    </ul>
+                </aside>
+            </div>
         </header>
-        <section>
-            <ul>
-                <li>Result 1</li>
-                <li>Result 2</li>
-                <li>Result 3</li>
-                <li>Result 4</li>
-                <li>Result 5</li>
-                <li>Result 6</li>
+        <section class="w-full h-full flex justify-between px-5">
+            <ul class="w-3/5 space-y-8 mt-5">
+                <li>
+                    <span class="text-xs text-neutral-500 mt-2">http://link.com</span>
+                    <h3 class="font-semibold text-xl">Mais ça, c'est uniquement lié au spirit. </h3>
+                    <p class="w-4/5 text-sm text-neutral-600 mt-2">Je me souviens en fait, après il faut s'intégrer tout ça
+                        dans les environnements et il faut se recréer... pour recréer... a better you et cette
+                        officialité peut vraiment retarder ce qui devrait devenir.</p>
+                </li>
+                <li>
+                    <span class="text-xs text-neutral-500 mt-2">http://link.com</span>
+
+                    <h3 class="font-semibold text-xl">C'est cette année que j'ai eu la révélation !</h3>
+                    <p class="text-sm text-neutral-600 mt-2">Ça sounds good, là on voit qu'on a beaucoup à travailler
+                        sur nous-mêmes car c'est juste une question d'awareness et finalement tout refaire depuis le
+                        début.</p>
+                </li>
+                <li>
+                    <span class="text-xs text-neutral-500 mt-2">http://link.com</span>
+
+                    <h3 class="font-semibold text-xl">Donc on n'est jamais seul spirituellement !</h3>
+                    <p class="w-4/5 text-sm text-neutral-600 mt-2">Tu vois, tu vois au passage qu'il n'y a rien de concret car
+                        on est tous capables de donner des informations à chacun et c'est une sensation réelle qui se
+                        produit si on veut !</p>
+                </li>
+                <li>
+                    <span class="text-xs text-neutral-500 mt-2">http://link.com</span>
+                    <h3 class="font-semibold text-xl">J'ai un chien en ce moment</h3>
+                    <p class="w-4/5 text-sm text-neutral-600 mt-2">Quand tu fais le calcul, je ne suis pas un simple danseur
+                        car là, j'ai un chien en ce moment à côté de moi et je le caresse, et cette officialité peut
+                        vraiment retarder ce qui devrait devenir... Et là, vraiment, j'essaie de tout coeur de donner la
+                        plus belle réponse de la terre ! </p>
+                </li>
+                <li>
+                    <span class="text-xs text-neutral-500 mt-2">http://link.com</span>
+                    <h3 class="font-semibold text-xl">Mais ça, c'est uniquement lié au spirit. </h3>
+                    <p class="w-4/5 text-sm text-neutral-600 mt-2">Je me souviens en fait, après il faut s'intégrer tout ça
+                        dans les environnements et il faut se recréer... pour recréer... a better you et cette
+                        officialité peut vraiment retarder ce qui devrait devenir.</p>
+                </li>
+                <li>
+                    <span class="text-xs text-neutral-500 mt-2">http://link.com</span>
+                    <h3 class="font-semibold text-xl">C'est cette année que j'ai eu la révélation !</h3>
+                    <p class="w-4/5 text-sm text-neutral-600 mt-2">Ça sounds good, là on voit qu'on a beaucoup à travailler
+                        sur nous-mêmes car c'est juste une question d'awareness et finalement tout refaire depuis le
+                        début.</p>
+                </li>
+                <li>
+                    <span class="text-xs text-neutral-500 mt-2">http://link.com</span>
+                    <h3 class="font-semibold text-xl">Donc on n'est jamais seul spirituellement !</h3>
+                    <p class="w-4/5 text-sm text-neutral-600 mt-2">Tu vois, tu vois au passage qu'il n'y a rien de concret car
+                        on est tous capables de donner des informations à chacun et c'est une sensation réelle qui se
+                        produit si on veut !</p>
+                </li>
+                <li>
+                    <span class="text-xs text-neutral-500 mt-2">http://link.com</span>
+                    <h3 class="font-semibold text-xl">J'ai un chien en ce moment</h3>
+                    <p class="w-4/5 text-sm text-neutral-600 mt-2">Quand tu fais le calcul, je ne suis pas un simple danseur
+                        car là, j'ai un chien en ce moment à côté de moi et je le caresse, et cette officialité peut
+                        vraiment retarder ce qui devrait devenir... Et là, vraiment, j'essaie de tout coeur de donner la
+                        plus belle réponse de la terre ! </p>
+                </li>
             </ul>
+            <aside class="">Pubs</aside>
         </section>
+        <div class="bg-neutral-900/90 w-full h-full fixed flex justify-center items-center">
+            <div class="bg-white w-2/5 h-3/5 rounded-lg opacity-100">
+                Popup
+            </div>
+            
+
+        </div>
     </main>
     <script type="module" src="/main.js"></script>
 </body>
+
 </html>

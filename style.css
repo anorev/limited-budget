@@ -1,18 +1,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-/* 
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  margin-top: 60px;
-}
 
-h1 {
-  color: red;
-}
+
 
 html, body {
   margin: 0;
@@ -21,23 +11,6 @@ html, body {
   width: 100%;
 }
 
-#search {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  
-
-  border: red solid 1px;
-
-  height: 100%;
-  width: 100%;
+[x-cloak] {
+  display: none!important;
 }
-
-.search__bar {
-  border-radius: 24px;
-  height: 44px;
-  width: 584px;
-  max-width: 584px;
-  border: black solid 1px;
-} */
