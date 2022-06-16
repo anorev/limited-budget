@@ -36,10 +36,13 @@
                 </aside>
             </div>
         </header>
-        <section class="w-full h-full flex justify-between px-5">
+        <section id="results-list" class="w-full h-full flex justify-between px-5">
             <ul class="w-3/5 space-y-8 mt-5">
                 <li>
-                    <span class="text-xs text-neutral-500 mt-2">http://link.com</span>
+                    <div class="text-green-600">
+                        <span class="text-xs font-bold border-2 py-0.5 px-2 rounded-md border-green-600">Pub</span>
+                        <span class="text-xs mt-2">http://link.com</span>
+                    </div>
                     <h3 class="font-semibold text-xl">Mais ça, c'est uniquement lié au spirit. </h3>
                     <p class="w-4/5 text-sm text-neutral-600 mt-2">Je me souviens en fait, après il faut s'intégrer tout
                         ça
@@ -47,16 +50,20 @@
                         officialité peut vraiment retarder ce qui devrait devenir.</p>
                 </li>
                 <li>
-                    <span class="text-xs text-neutral-500 mt-2">http://link.com</span>
-
+                    <div class="text-green-600">
+                        <span class="text-xs font-bold border-2 py-0.5 px-2 rounded-md border-green-600">Pub</span>
+                        <span class="text-xs mt-2">http://link.com</span>
+                    </div>
                     <h3 class="font-semibold text-xl">C'est cette année que j'ai eu la révélation !</h3>
                     <p class="text-sm text-neutral-600 mt-2">Ça sounds good, là on voit qu'on a beaucoup à travailler
                         sur nous-mêmes car c'est juste une question d'awareness et finalement tout refaire depuis le
                         début.</p>
                 </li>
                 <li>
-                    <span class="text-xs text-neutral-500 mt-2">http://link.com</span>
-
+                    <div class="text-green-600">
+                        <span class="text-xs font-bold border-2 py-0.5 px-2 rounded-md border-green-600">Pub</span>
+                        <span class="text-xs mt-2">http://link.com</span>
+                    </div>
                     <h3 class="font-semibold text-xl">Donc on n'est jamais seul spirituellement !</h3>
                     <p class="w-4/5 text-sm text-neutral-600 mt-2">Tu vois, tu vois au passage qu'il n'y a rien de
                         concret car
@@ -64,7 +71,10 @@
                         produit si on veut !</p>
                 </li>
                 <li>
-                    <span class="text-xs text-neutral-500 mt-2">http://link.com</span>
+                    <div class="text-green-600">
+                        <span class="text-xs font-bold border-2 py-0.5 px-2 rounded-md border-green-600">Pub</span>
+                        <span class="text-xs mt-2">http://link.com</span>
+                    </div>
                     <h3 class="font-semibold text-xl">J'ai un chien en ce moment</h3>
                     <p class="w-4/5 text-sm text-neutral-600 mt-2">Quand tu fais le calcul, je ne suis pas un simple
                         danseur
@@ -73,7 +83,10 @@
                         plus belle réponse de la terre ! </p>
                 </li>
                 <li>
-                    <span class="text-xs text-neutral-500 mt-2">http://link.com</span>
+                    <div class="text-green-600">
+                        <span class="text-xs font-bold border-2 py-0.5 px-2 rounded-md border-green-600">Pub</span>
+                        <span class="text-xs mt-2">http://link.com</span>
+                    </div>
                     <h3 class="font-semibold text-xl">Mais ça, c'est uniquement lié au spirit. </h3>
                     <p class="w-4/5 text-sm text-neutral-600 mt-2">Je me souviens en fait, après il faut s'intégrer tout
                         ça
@@ -81,7 +94,10 @@
                         officialité peut vraiment retarder ce qui devrait devenir.</p>
                 </li>
                 <li>
-                    <span class="text-xs text-neutral-500 mt-2">http://link.com</span>
+                    <div class="text-green-600">
+                        <span class="text-xs font-bold border-2 py-0.5 px-2 rounded-md border-green-600">Pub</span>
+                        <span class="text-xs mt-2">http://link.com</span>
+                    </div>
                     <h3 class="font-semibold text-xl">C'est cette année que j'ai eu la révélation !</h3>
                     <p class="w-4/5 text-sm text-neutral-600 mt-2">Ça sounds good, là on voit qu'on a beaucoup à
                         travailler
@@ -106,10 +122,29 @@
                         plus belle réponse de la terre ! </p>
                 </li>
             </ul>
-            <aside class="">Pubs</aside>
+            <aside class="border-2 w-2/5 rounded-md px-5 py-5 ml-3">
+                <ul class="space-y-8">
+                    <li>
+                        <span class="text-xs text-neutral-">http://ad.com</span>
+                        <h3 class="font-semibold text-xl">Nos amis les chiens méritent le meilleur !</h3>
+                        <p class="w-4/5 text-sm text-neutral-600 mt-2">Le meilleur de la paté pour chien à <strong>-20%</strong> !</p>
+                    </li>
+                    <li>
+                        <span class="text-xs text-neutral-">http://ad.com</span>
+                        <h3 class="font-semibold text-xl">Pour les minets!</h3>
+                        <p class="w-4/5 text-sm text-neutral-600 mt-2">Le meilleur des croquettes pour chats à <strong>-15%</strong> !</p>
+                    </li>
+                    <li>
+                        <span class="text-xs text-neutral-">http://ad.com</span>
+                        <h3 class="font-semibold text-xl">Nos amis les chiens méritent le meilleur !</h3>
+                        <p class="w-4/5 text-sm text-neutral-600 mt-2">Le meilleur de la paté pour chien à <strong>-20%</strong> !</p>
+                    </li>
+                </ul>
+            </aside>
         </section>
         <!-- x-data="{consentOpen: true}" -->
-        <div x-show="consentOpen" x-cloak class="bg-neutral-900/90 w-full h-full fixed flex justify-center items-center">
+        <div x-show="consentOpen" x-cloak
+            class="bg-neutral-900/90 w-full h-full fixed flex justify-center items-center">
             <div class="bg-white w-3/5 h-4/5 rounded-lg px-5 py-5 flex flex-col justify-between items-center">
                 <header class="mb-5 bg-rose-200 flex w-full justify-between">
                     <span>logo</span>
@@ -165,8 +200,12 @@
                         </div>
                     </div>
                     <div class="bg-gray-200 self-end">
-                        <a @click="consentOpen = false" href="/pages/results.html" class="py-2 px-4  bg-white text-black border-2 border-black rounded-lg shadow-md hover:bg-neutral-700 hover:text-white focus:ring-2 focus:ring-opacity-75">Tout refuser</a>
-                        <a @click="consentOpen = false" href="/pages/results.html" class="py-2 px-4 bg-black text-white font-semibold rounded-lg shadow-md hover:bg-neutral-700 focus:outline-none focus:ring-2 focus:ring-opacity-75">Tout accepter</a>
+                        <a @click="consentOpen = false" href="/pages/results.html"
+                            class="py-2 px-4  bg-white text-black border-2 border-black rounded-lg shadow-md hover:bg-neutral-700 hover:text-white focus:ring-2 focus:ring-opacity-75">Tout
+                            refuser</a>
+                        <a @click="consentOpen = false" href="/pages/results.html"
+                            class="py-2 px-4 bg-black text-white font-semibold rounded-lg shadow-md hover:bg-neutral-700 focus:outline-none focus:ring-2 focus:ring-opacity-75">Tout
+                            accepter</a>
                     </div>
                     <div class="self-center">
                         <a href="">Plus d'options</a>
