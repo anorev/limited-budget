@@ -122,7 +122,7 @@
                         plus belle réponse de la terre ! </p>
                 </li>
             </ul>
-            <aside class="border-2 w-2/5 rounded-md px-5 py-5 ml-3">
+            <aside id="ads" class="border-2 w-2/5 rounded-md px-5 py-5 my-3">
                 <ul class="space-y-8">
                     <li>
                         <span class="text-xs text-neutral-">http://ad.com</span>
@@ -143,8 +143,8 @@
             </aside>
         </section>
         <!-- x-data="{consentOpen: true}" -->
-        <div x-show="consentOpen" x-cloak
-            class="bg-neutral-900/90 w-full h-full fixed flex justify-center items-center">
+        <div x-data="{consentOpen: true}" x-show="consentOpen" x-cloak x-transition
+            class="bg-neutral-900/90 w-100 h-full fixed flex justify-center items-center">
             <div class="bg-white w-3/5 h-4/5 rounded-lg px-5 py-5 flex flex-col justify-between items-center">
                 <header class="mb-5 bg-rose-200 flex w-full justify-between">
                     <span>logo</span>
@@ -200,12 +200,12 @@
                         </div>
                     </div>
                     <div class="bg-gray-200 self-end">
-                        <a @click="consentOpen = false" href="/pages/results.html"
+                        <button @click="consentOpen = false" href="/pages/results.html"
                             class="py-2 px-4  bg-white text-black border-2 border-black rounded-lg shadow-md hover:bg-neutral-700 hover:text-white focus:ring-2 focus:ring-opacity-75">Tout
-                            refuser</a>
-                        <a @click="consentOpen = false" href="/pages/results.html"
+                            refuser</button>
+                        <button @click="consentOpen = false" href="/pages/results.html"
                             class="py-2 px-4 bg-black text-white font-semibold rounded-lg shadow-md hover:bg-neutral-700 focus:outline-none focus:ring-2 focus:ring-opacity-75">Tout
-                            accepter</a>
+                            accepter</button>
                     </div>
                     <div class="self-center">
                         <a href="">Plus d'options</a>
